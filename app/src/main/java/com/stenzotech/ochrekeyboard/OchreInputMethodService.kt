@@ -61,6 +61,7 @@ class OchreInputMethodService : InputMethodService() {
             "Space" -> ic.commitText(" ", 1)
             "?123" -> ic.commitText("123 ", 1)
             "☺" -> ic.commitText("☺", 1)
+            "♥" -> ic.commitText("\u2665\uFE0E", 1)
             else -> ic.commitText(label, 1)
         }
     }
